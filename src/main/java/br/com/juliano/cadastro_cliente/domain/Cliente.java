@@ -30,9 +30,9 @@ public class Cliente {
     @Length(min=2, max=300,message="O tamanho do endereço deve ser entre {min} e {max} caracteres")
 	private String endereco;
 	
-/*	@OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "cliente",fetch = FetchType.EAGER)
 	@Cascade(CascadeType.ALL)
-	private List<Pedido> pedidos;*/
+	private List<Pedido> pedidos;
 
 	public Cliente(Long id,String nome,String endereco) {
 		super();
@@ -67,7 +67,7 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 	
-	/*public List<Pedido> getPedidos() {
+	public List<Pedido> getPedidos() {
 		return pedidos;
 
 	}
@@ -83,7 +83,7 @@ public class Cliente {
 	
 	public void setPedidos(List<Pedido> pedidos) {
 		this.pedidos = pedidos;
-	}*/
+	}
 
 	@Override
 	public String toString() {

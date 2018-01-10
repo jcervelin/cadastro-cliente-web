@@ -49,25 +49,25 @@ implements ApplicationRunner
     	listaPedidoZePequeno1.add(dog2);
     	listaPedidoZePequeno1.add(dog3);
     	
-    /*	Pedido pedidoDoFernando = new Pedido(ID_PEDIDO1,fernando,listaPedidoFernando1,dog1.getPreco());
+    	Pedido pedidoDoFernando = new Pedido(ID_PEDIDO1,fernando,listaPedidoFernando1,dog1.getPreco());
     	fernando.novoPedido(pedidoDoFernando);
     	
     	Pedido pedidoDoZepequeno = new Pedido(ID_PEDIDO2,zePequeno,listaPedidoZePequeno1, dog2.getPreco()+dog3.getPreco());
     	zePequeno.novoPedido(pedidoDoZepequeno);
-    	*/
-    	/*System.out.println(">>> Pedido 1 - Fernando : "+ pedidoDoFernando);
+    	
+    	System.out.println(">>> Pedido 1 - Fernando : "+ pedidoDoFernando);
     	System.out.println(">>> Pedido 2 - Ze Pequeno: "+ pedidoDoZepequeno);
-    	*/
+    	
        
 		clienteRepository.saveAndFlush(zePequeno);
 		System.out.println(">>> Gravado cliente 2: "+zePequeno);
 
 		List<Item> listaPedidoFernando2 = new ArrayList<Item>();
 		listaPedidoFernando2.add(dog2);
-    	//Pedido pedido2DoFernando  = new Pedido(ID_PEDIDO3,fernando,listaPedidoFernando2,dog2.getPreco());
-    	//fernando.novoPedido(pedido2DoFernando);
+    	Pedido pedido2DoFernando  = new Pedido(ID_PEDIDO3,fernando,listaPedidoFernando2,dog2.getPreco());
+    	fernando.novoPedido(pedido2DoFernando);
     	clienteRepository.saveAndFlush(fernando);
-    	//System.out.println(">>> Pedido 2 - Fernando : "+ pedido2DoFernando);
+    	System.out.println(">>> Pedido 2 - Fernando : "+ pedido2DoFernando);
     	System.out.println(">>> Gravado cliente 1: "+fernando);
 		
     }
