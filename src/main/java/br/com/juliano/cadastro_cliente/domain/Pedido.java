@@ -22,12 +22,12 @@ public class Pedido {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@ManyToOne(optional = true)
+	/*@ManyToOne(optional = true)
 	private Cliente cliente;
 
 	@ManyToMany
 	@Cascade(CascadeType.MERGE)
-	private List<Item> itens;
+	private List<Item> itens;*/
 
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private Date data;
@@ -37,7 +37,7 @@ public class Pedido {
 
 	public Pedido() {}
 
-	public Pedido(Long id,Cliente cliente,List<Item> itens,Double valorTotal) {
+	/*public Pedido(Long id,Cliente cliente,List<Item> itens,Double valorTotal) {
 		super();
 		this.id = id;
 		this.cliente = cliente;
@@ -45,7 +45,7 @@ public class Pedido {
 		this.data = new Date();
 		this.valorTotal = valorTotal;
 	}
-
+*/
 	public Long getId() {
 		return id;
 	}
@@ -54,7 +54,7 @@ public class Pedido {
 		this.id = id;
 	}
 
-	public Cliente getCliente() {
+	/*public Cliente getCliente() {
 		return cliente;
 	}
 
@@ -68,7 +68,7 @@ public class Pedido {
 
 	public void setItens(List<Item> itens) {
 		this.itens = itens;
-	}
+	}*/
 
 	public Date getData() {
 		return data;
@@ -113,7 +113,7 @@ public class Pedido {
 
 	@Override
 	public String toString() {
-		return "Pedido [id=" + id + ", cliente=" + cliente + ", itens=" + itens + ", data=" + data + ", valorTotal=" + valorTotal + "]";
+		return "Pedido [id=" + id +  ", data=" + data + ", valorTotal=" + valorTotal + "]";
 	}
 
 }
