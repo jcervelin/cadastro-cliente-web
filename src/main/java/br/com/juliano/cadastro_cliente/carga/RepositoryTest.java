@@ -1,4 +1,4 @@
-/*package br.com.juliano.cadastro_cliente.carga;
+package br.com.juliano.cadastro_cliente.carga;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,4 +72,4 @@ implements ApplicationRunner
 		
     }
  
-}*/
+}
