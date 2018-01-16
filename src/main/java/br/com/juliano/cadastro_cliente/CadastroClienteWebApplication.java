@@ -13,8 +13,8 @@ public class CadastroClienteWebApplication extends SpringBootServletInitializer 
 		SpringApplication.run(CadastroClienteWebApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(CadastroClienteWebApplication.class);
-	}
+	}*/
 }

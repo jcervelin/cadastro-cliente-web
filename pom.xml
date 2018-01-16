@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>cadastro-cliente-web-agora-vai</name>
+	<name>cadastro-cliente-web</name>
 	<description>Cadastro de Clientes</description>
 
 	<parent>
