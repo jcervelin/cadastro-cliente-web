@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import br.com.juliano.cadastro_cliente.CadastroClienteWebAgoraVaiApplication;
+import br.com.juliano.cadastro_cliente.CadastroClienteWebApplication;
 import br.com.juliano.cadastro_cliente.domain.Cliente;
 import br.com.juliano.cadastro_cliente.service.ClienteService;
 
