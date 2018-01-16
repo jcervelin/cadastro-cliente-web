@@ -1,4 +1,4 @@
-package br.com.juliano.cadastro_cliente.carga;
+/*package br.com.juliano.cadastro_cliente.carga;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +36,7 @@ implements ApplicationRunner
 
     	System.out.println(">>> Iniciando carga de dados...");
     	Cliente juliano = new Cliente(ID_CLIENTE_JULIANO,"Juliano Cervelin","São Paulo");
-    	/*	Cliente zePequeno = new Cliente(ID_CLIENTE_ZE_PEQUENO,"Zé Pequeno","Cidade de Deus");    	
+    		Cliente zePequeno = new Cliente(ID_CLIENTE_ZE_PEQUENO,"Zé Pequeno","Cidade de Deus");    	
     	
     	Item item1 = new Item(ID_ITEM1,"Item 1 com salada",25d);
     	Item item2 = new Item(ID_ITEM2,"Item 2 sem salada",27d);
@@ -65,11 +65,11 @@ implements ApplicationRunner
 		List<Item> listaPedidoJuliano2 = new ArrayList<Item>();
 		listaPedidoJuliano2.add(item2);
     	Pedido pedido2DoJuliano  = new Pedido(ID_PEDIDO3,juliano,listaPedidoJuliano2,item2.getPreco());
-    	juliano.novoPedido(pedido2DoJuliano);*/
+    	juliano.novoPedido(pedido2DoJuliano);
     	clienteRepository.saveAndFlush(juliano);
-    	/*System.out.println(">>> Pedido 2 - Juliano : "+ pedido2DoJuliano);
-    	System.out.println(">>> Gravado cliente 1: "+juliano);*/
+    	System.out.println(">>> Pedido 2 - Juliano : "+ pedido2DoJuliano);
+    	System.out.println(">>> Gravado cliente 1: "+juliano);
 		
     }
  
-}
+}*/
