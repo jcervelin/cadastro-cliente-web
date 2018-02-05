@@ -1,4 +1,4 @@
-package br.com.juliano.cadastro_cliente;
+/*package br.com.juliano.cadastro_cliente;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,3 +14,4 @@ public class CadastroClienteWebApplicationTests {
 	}
 
 }
+*/
