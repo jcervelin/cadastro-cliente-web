@@ -1,5 +1,6 @@
-/*package br.com.juliano.cadastro_cliente;
+package br.com.juliano.cadastro_cliente;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,7 +12,8 @@ public class CadastroClienteWebApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		String nome = "Juliano";
+		Assert.assertEquals("Juliano", nome);
 	}
 
 }
-*/
